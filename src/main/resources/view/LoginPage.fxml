@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="rootNode" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #baf5ca;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.teleleavesbilling.controller.LoginFormController">
+   <children>
+      <Label layoutX="137.0" layoutY="14.0" text="Welcome" textFill="#21221f">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="58.0" text="Tea Leaf Bill System" textFill="#1f9e3e">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="120.0" text="User Name :" textFill="#0d0000">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="31.0" layoutY="151.0" prefHeight="30.0" prefWidth="344.0" />
+      <TextField fx:id="texPassword" layoutX="27.0" layoutY="270.0" prefHeight="30.0" prefWidth="344.0" />
+      <Label layoutX="27.0" layoutY="225.0" text="Password :" textFill="#0d0000">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLogIn" layoutX="153.0" layoutY="421.0" mnemonicParsing="false" onAction="#btnLogInOnAction" prefHeight="33.0" prefWidth="139.0" text="Log In" textFill="#ab0fbf">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnReset" layoutX="187.0" layoutY="489.0" mnemonicParsing="false" onAction="#btnResetOnAction" text="Reset" textFill="#e11313">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

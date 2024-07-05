@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1000.0" style="-fx-background-color: #baf5ca;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.teleleavesbilling.controller.OrdersFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#87c385" height="50.0" stroke="BLACK" strokeType="INSIDE" width="1000.0" />
+      <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Downloads/realistic-beautiful-flying-green-tea-leaf-isolated-on-white-leaves-spring-background-the-premium-green-tea-for-good-health-foliage-nature-plant-for-2DTG5C7.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="950.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Downloads/false-2061132_640.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="97.0" layoutY="17.0" text="Tea Leaf Bill System" textFill="#387517">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="559.0" layoutY="16.0" text="Orders" textFill="#387517">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="89.0" text="Order ID  :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOrderID" layoutX="211.0" layoutY="82.0" prefHeight="32.0" prefWidth="348.0" />
+      <TextField fx:id="txtDate" layoutX="211.0" layoutY="136.0" prefHeight="32.0" prefWidth="348.0" />
+      <TextField fx:id="txtAddress" layoutX="211.0" layoutY="188.0" prefHeight="32.0" prefWidth="348.0" />
+      <TextField fx:id="txtQuantity" layoutX="211.0" layoutY="236.0" prefHeight="32.0" prefWidth="348.0" />
+      <TextField fx:id="txtSearch" layoutX="211.0" layoutY="283.0" prefHeight="32.0" prefWidth="348.0" />
+      <Button fx:id="btnSearch" layoutX="111.0" layoutY="287.0" mnemonicParsing="false" onAction="#btnSearchOnAction" text="Search" />
+      <Label layoutX="70.0" layoutY="143.0" text="Date  :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="195.0" text="Address  :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="243.0" text="Quantity :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnClear" layoutX="678.0" layoutY="275.0" mnemonicParsing="false" onAction="#btnClearOnAction" text="Clear" />
+      <Button fx:id="btnUpdate" layoutX="666.0" layoutY="149.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" text="Update" />
+      <Button fx:id="btnDelete" layoutX="669.0" layoutY="208.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" text="Delete" />
+      <Button fx:id="btnSave" layoutX="674.0" layoutY="86.0" mnemonicParsing="false" onAction="#btnSaveOnAction" text="Save" />
+      <TableView fx:id="tblOrders" layoutX="134.0" layoutY="349.0" onMouseClicked="#selectedOrders" prefHeight="200.0" prefWidth="629.0">
+        <columns>
+          <TableColumn fx:id="colOrderID" prefWidth="144.0" text="Order ID" />
+          <TableColumn fx:id="colDate" prefWidth="163.0" text="Date" />
+            <TableColumn fx:id="colAddress" prefWidth="163.0" text="Address" />
+            <TableColumn fx:id="colQuantity" prefWidth="163.0" text="Quantity" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
